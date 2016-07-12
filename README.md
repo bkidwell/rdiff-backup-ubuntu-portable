@@ -24,7 +24,7 @@ Go to `~/bin` (create it if necessary) on the target machine and extract the con
 
 If your target system is a shared web host like DreamHost, you probably don't have `~/bin` in the `$PATH` environment variable for "non-interactive" shells. To use your remote `rdiff-backup` in "server" mode, you must specify the "remote-schema" command line option so that the client knows where to run the server script from.
 
-For example, if you want to use `rdiff-backup` to login to `HOST` as `FOO` and backup the `/BAR.com` folder, use the following command line on the client:
+For example, if you want to use `rdiff-backup` to login to `HOST` as `FOO` and backup the `~/BAR.com` folder, use the following command line on the client:
 
 ```
 rdiff-backup --remote-schema 'ssh -C %s bin/rdiff-backup --server' \
