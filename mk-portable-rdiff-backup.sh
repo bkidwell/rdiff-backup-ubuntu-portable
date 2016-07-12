@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# mk-portable-rdiff-backup.sh
+#
+# Copyright 2016 Brendan Kidwell
+# https://github.com/bkidwell/rdiff-backup-ubuntu-portable
+# License: GPLv3
+
 echo This script will take the following files in its folder:
 echo "   librsync1_*_amd64.deb"
 echo "   rdiff-backup_*_amd64.deb"
@@ -60,4 +66,3 @@ rm -rf portable build
 
 echo Done!
 read -p "Press [Enter] key to continue..."
-
