@@ -7,8 +7,8 @@
 # License: GPLv3
 
 echo This script will take the following files in its folder:
-echo "   librsync1_*_amd64.deb"
-echo "   rdiff-backup_*_amd64.deb"
+echo "   librsync1_*.deb"
+echo "   rdiff-backup_*.deb"
 echo and build a portable copy of \'rdiff-backup\' for use on DreamHost.
 
 read -p "Press [Enter] key to continue..."
@@ -22,8 +22,8 @@ mkdir build
 echo Extracting librsync and rdiff-backup...
 
 cd build
-ar p ../librsync1_*_amd64.deb data.tar.gz | tar zx
-ar p ../rdiff-backup_*_amd64.deb data.tar.gz | tar zx
+ar p ../librsync1_*.deb data.tar.gz | tar zx
+ar p ../rdiff-backup_*.deb data.tar.gz | tar zx
 
 echo Building app folder...
 
